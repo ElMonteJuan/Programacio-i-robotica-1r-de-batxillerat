@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyMlOam6cu0Qzr2XJYVoybQX",
+      "authorship_tag": "ABX9TyM+4vuQHbNOTqanqOj3iUXG",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -28,7 +28,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 2,
+      "execution_count": null,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
@@ -202,7 +202,7 @@
         "id": "Rudo6kJN4Fs6",
         "outputId": "b56c6587-9290-4fdc-c9d4-69c09b0fd1a5"
       },
-      "execution_count": 4,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -296,30 +296,34 @@
       "cell_type": "code",
       "source": [
         "#una botiga de joguines te molt exit en dos dels seus productes: nines i pallasos. acostuma a fer vendes per correu i la empresa de loguistica els cobra pel de cada joguina, aixi doncs han de calcular els pes del pallasos i nines que sortiran a cada paquet a demanda. cada pallaso pesa 112grams cada nina pesa 75 grams leer numero de pallasos i nines venuts en la darrera comanda quant per i quantitat\n",
-        "pallaso = 112\n",
+        "pallaso = 112.2\n",
         "muñeca = 75\n",
-        "pallasos = int(input(\"cuantos pallasos: \"))\n",
-        "muñecas = int(input(\"cuantas muñecas: \"))\n",
+        "pallasos = float(input(\"cuantos pallasos: \"))\n",
+        "muñecas = float(input(\"cuantas muñecas: \"))\n",
         "total = pallaso * pallasos + muñeca * muñecas\n",
-        "print (str(total))\n",
-        ""
+        "print (str(total) + \" grams\")\n",
+        "\n",
+        "# pregunta a la variable mitjançant el type quin tipus de funcio es. un cop preguntat si la resposta es un numero sencer cal que\n",
+        "# el programa ens digui, escriu el nombre amb un numero no snecer o decimal, sino caldra que imprimeix  el valor de nines.\n",
+        "print (type(total))"
       ],
       "metadata": {
         "id": "2Fe-_LCXrFYk",
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "outputId": "b1819bf1-5dde-4a58-cfa7-89c6372db5a6"
+        "outputId": "c6d4f6ae-d1b3-4381-837f-013b5502bf9a"
       },
-      "execution_count": 7,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
           "name": "stdout",
           "text": [
-            "Cuantos pallasos: 10\n",
-            "cuantas muñecas: 4\n",
-            "1420\n"
+            "cuantos pallasos: 5\n",
+            "cuantas muñecas: 6\n",
+            "1011.0 grams\n",
+            "<class 'float'>\n"
           ]
         }
       ]
