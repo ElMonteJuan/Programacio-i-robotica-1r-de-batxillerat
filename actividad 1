@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyM+4vuQHbNOTqanqOj3iUXG",
+      "authorship_tag": "ABX9TyOeWsuGmEIXGD+hXoWeJabG",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -288,6 +288,38 @@
           "name": "stdout",
           "text": [
             "2786\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x=10\n",
+        "print(type(x))\n",
+        "\n",
+        "x=1.5\n",
+        "print(type(x))\n",
+        "\n",
+        "x=1,5\n",
+        "print(type(x))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "263ITRbADpcD",
+        "outputId": "530a125d-ee7a-4abd-8fd9-ae151efe2b55"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'int'>\n",
+            "<class 'float'>\n",
+            "<class 'tuple'>\n"
           ]
         }
       ]
