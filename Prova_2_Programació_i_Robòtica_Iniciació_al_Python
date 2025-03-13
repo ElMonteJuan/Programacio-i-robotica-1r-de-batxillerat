@@ -1,0 +1,509 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNCvhbnEDMv6dnJRIf5CGCe",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/ElMonteJuan/Programacio-i-robotica-1r-de-batxillerat/blob/main/Prova_2_Programaci%C3%B3_i_Rob%C3%B2tica_Iniciaci%C3%B3_al_Python\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Zehui Wang"
+      ],
+      "metadata": {
+        "id": "yHudrqlSRc4U"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Exercici 1"
+      ],
+      "metadata": {
+        "id": "u6Ul66UVLpIF"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2WE0n-kWEm1f",
+        "outputId": "b857837a-01bd-431f-e3e8-19403ba5b583"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Elisenda', 'Marc', 'Aina', 'Eloi', 'Ulises', 'Sara', 'Josep', 'Júlia', 'Roser', 'Kai']\n"
+          ]
+        }
+      ],
+      "source": [
+        "#1.\n",
+        "llistat = [\"Elisenda\", \"Marc\", \"Aina\", \"Eloi\", \"Ulises\", \"Sara\", \"Josep\", \"Júlia\", \"Roser\", \"Kai\"]\n",
+        "print (llistat)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#2.\n",
+        "llistat = [\"Elisenda\", \"Marc\", \"Aina\", \"Eloi\", \"Ulises\", \"Sara\", \"Josep\", \"Júlia\", \"Roser\", \"Kai\"]\n",
+        "\n",
+        "for name in llistat:\n",
+        "  print (f\"La persona s'anomena: {name}.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "itMMtWsiFvH2",
+        "outputId": "ae026648-14ee-4f35-ac39-d28f92890382"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "La persona s'anomena: Elisenda.\n",
+            "La persona s'anomena: Marc.\n",
+            "La persona s'anomena: Aina.\n",
+            "La persona s'anomena: Eloi.\n",
+            "La persona s'anomena: Ulises.\n",
+            "La persona s'anomena: Sara.\n",
+            "La persona s'anomena: Josep.\n",
+            "La persona s'anomena: Júlia.\n",
+            "La persona s'anomena: Roser.\n",
+            "La persona s'anomena: Kai.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#3.\n",
+        "llistat = [\"Elisenda\", \"Marc\", \"Aina\", \"Eloi\", \"Ulises\", \"Sara\", \"Josep\", \"Júlia\", \"Roser\", \"Kai\"]\n",
+        "\n",
+        "llistat.remove(\"Kai\")\n",
+        "llistat.remove(\"Ulises\")\n",
+        "\n",
+        "print (llistat)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Fgaul4EbGF-a",
+        "outputId": "6aef3bb4-9afd-4bb9-f46e-2180e0c427e1"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Elisenda', 'Marc', 'Aina', 'Eloi', 'Sara', 'Josep', 'Júlia', 'Roser']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#4.\n",
+        "llistat = [\"Elisenda\", \"Marc\", \"Aina\", \"Eloi\", \"Ulises\", \"Sara\", \"Josep\", \"Júlia\", \"Roser\", \"Kai\"]\n",
+        "\n",
+        "llistat.remove(\"Kai\")\n",
+        "llistat.remove(\"Ulises\")\n",
+        "\n",
+        "print (len(llistat))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "v7GopSJuG2Fc",
+        "outputId": "2a1f2fb6-7850-4a1d-8ec8-ebbd250c539b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "8\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#5.\n",
+        "llistat = [\"Elisenda\", \"Marc\", \"Aina\", \"Eloi\", \"Sara\", \"Josep\", \"Júlia\", \"Roser\"]\n",
+        "\n",
+        "a = ''.join(llistat)\n",
+        "a = ''.join(llistat)\n",
+        "\n",
+        "numa = 0\n",
+        "numA = 0\n",
+        "letrA = \"A\"\n",
+        "letra = \"a\"\n",
+        "\n",
+        "contar = a.count(letra)\n",
+        "contAr = a.count(letrA)\n",
+        "print (f\"{contAr} A | {contar} a\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pnYlPnNXHL-N",
+        "outputId": "5c2d0071-0452-4f22-8a80-2e51d67a6187"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1 A | 6 a\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#6.\n",
+        "llistat = [\"Elisenda\", \"Marc\", \"Aina\", \"Eloi\", \"Sara\", \"Josep\", \"Júlia\", \"Roser\"]\n",
+        "\n",
+        "accents = \"áéíóú\"\n",
+        "\n",
+        "contador = 0\n",
+        "for name in llistat:\n",
+        "    if any(letra in accents for letra in name):\n",
+        "        contador += 1\n",
+        "\n",
+        "print(contador)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LJK4eEnTICrS",
+        "outputId": "f1770535-44d0-49e5-e4b2-90d1df4c9b6c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#7.\n",
+        "llistat = [\"Elisenda\", \"Marc\", \"Aina\", \"Eloi\", \"Sara\", \"Josep\", \"Júlia\", \"Roser\"]\n",
+        "\n",
+        "llistat.append (\"Sara\")\n",
+        "\n",
+        "print (llistat)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ITFOaQQSLDr9",
+        "outputId": "f84fd9df-f875-4eeb-8851-894af9ccca31"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Elisenda', 'Marc', 'Aina', 'Eloi', 'Sara', 'Josep', 'Júlia', 'Roser', 'Sara']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#8.\n",
+        "llistat = [\"Elisenda\", \"Marc\", \"Aina\", \"Eloi\", \"Sara\", \"Josep\", \"Júlia\", \"Roser\"]\n",
+        "\n",
+        "llistat.append (\"Sara\")\n",
+        "llistat.insert(2, \"Victor\")\n",
+        "\n",
+        "print (llistat)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ahqmg76KLTVa",
+        "outputId": "c33be968-aa49-4bde-9ef2-c55ce2984e95"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Elisenda', 'Marc', 'Victor', 'Aina', 'Eloi', 'Sara', 'Josep', 'Júlia', 'Roser', 'Sara']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Exercici 2"
+      ],
+      "metadata": {
+        "id": "OYUcugsfLmf5"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#9.\n",
+        "Quantitat = [\"10\", \"20\", \"2\", \"3\", \"1\", \"2\", \"1\", \"10\", \"2\", \"1\", \"2\", \"10\"]\n",
+        "Productes = [\"Tomàquets\", \"Pastanagues\", \"Enciams\", \"Porros\", \"Formatge\", \"Pollastres\", \"Massa pizza\", \"Pebrots verds\", \"Barres de pa\", \"Salmó\", \"Coliflors\", \"Espàrrecs\"]\n",
+        "\n",
+        "for i in range(len(Quantitat)):\n",
+        "    print(f\"Vull {Quantitat[i]} {Productes[i]}.\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JA4vXT1mLlmN",
+        "outputId": "0dcb4d84-874d-4111-a596-a4e368d604a9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Vull 10 Tomàquets.\n",
+            "Vull 20 Pastanagues.\n",
+            "Vull 2 Enciams.\n",
+            "Vull 3 Porros.\n",
+            "Vull 1 Formatge.\n",
+            "Vull 2 Pollastres.\n",
+            "Vull 1 Massa pizza.\n",
+            "Vull 10 Pebrots verds.\n",
+            "Vull 2 Barres de pa.\n",
+            "Vull 1 Salmó.\n",
+            "Vull 2 Coliflors.\n",
+            "Vull 10 Espàrrecs.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Exercici 3"
+      ],
+      "metadata": {
+        "id": "JwbHsuQpNl4e"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#10.\n",
+        "x = 345678.56676\n",
+        "print (type(x))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3_YuI8OgNhej",
+        "outputId": "abe69446-06d8-4d1e-f2f6-46ce8fcdefb5"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'float'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#11.\n",
+        "y = \"José\"\n",
+        "print (type(y))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "13j-jE-sN45w",
+        "outputId": "704d514c-cb49-434e-e828-201f82ea89a1"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'str'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Exercici 4."
+      ],
+      "metadata": {
+        "id": "z0ptbhLtN_1J"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#12.\n",
+        "#Anomenem que la variable [numeros3] sigui tots els números entre el 16 i 32, en comptes de que compti un per un, comptara de dos en dos.\n",
+        "numeros3 = range(16, 32, 2)\n",
+        "\n",
+        "#Aquí veurem el resultat, que serian tots els nombres entre 16 i 32 comptant-los de dos en dos.\n",
+        "list(numeros3)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kuzbaMSDOA-h",
+        "outputId": "3848fb89-dfa6-41d3-b2ec-14d464b55629"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[16, 18, 20, 22, 24, 26, 28, 30]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 39
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#13.\n",
+        "#Creem una variable anomenada [palabra] i que contingui el text \"Domingo\".\n",
+        "palabra = \"Domingo\"\n",
+        "\n",
+        "#Compatra lletra per lletra tots els carácters dins del text de la variable [paraula].\n",
+        "for letra in palabra:\n",
+        "  # Printará les lletres comptades anteriorment.\n",
+        "  print (letra)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lB7ihrGGOoyu",
+        "outputId": "2a046a47-da65-4b2a-f185-51a25cccd737"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "D\n",
+            "o\n",
+            "m\n",
+            "i\n",
+            "n\n",
+            "g\n",
+            "o\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#14.\n",
+        "#Creem una variable que es diu [ciudad] que contingui el text de \"tarragona\"\n",
+        "ciudad = \"tarragona\"\n",
+        "#Analitzem si el contingut de la variable [ciutat] és igual a \"barcelona\"\n",
+        "if ciudad == \"barcelona\":\n",
+        "  #Si és igual a \"barcelona\", llavors printará \"Correcto\"\n",
+        "  #En aquest cas aquest codi esta malament perque encara que \"tarragona\" no sigui igual a \"barcelona\" et diu que es \"Correcte\".\n",
+        "  print (\"Correcto\")\n",
+        "  #Si en el cas de que sigui qualsevol altra cosa menys \"barcelona\", printará \"No es correcto\"\n",
+        "else:\n",
+        "  print (\"No es correcto\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EP5Lp_1ePNoq",
+        "outputId": "a9fc742a-45ee-4750-fff5-6577d7d691e2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Correcto\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
